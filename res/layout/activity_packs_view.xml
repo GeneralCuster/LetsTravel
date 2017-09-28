@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.letsbyjames.letstravel.PacksActivityView"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <RelativeLayout
+        android:id="@+id/relLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:background="@color/colorPlaces"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0">
+
+        <ImageView
+            android:id="@+id/pinPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-70dp"
+            android:layout_marginTop="40dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="175dp"
+            android:maxWidth="175dp"
+            android:src="@drawable/places_half"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
+
+
+        <!--This linear layout view is NOT useless, it pulls down the Relative layout so to extend the color below the image-->
+        <!--There's probably a more professional way to do that, but this works and I'm lazy-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="255dp"
+            tools:ignore="UselessLeaf">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pickCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/packCat"
+            android:textColor="#ffffff"
+            android:textSize="32sp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/pickCatDesc"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="130dp"
+            android:text="@string/packCatDesc"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addButton"
+        android:src="@drawable/ic_add_white_24dp"
+        android:padding="16dp"
+        android:scaleType="fitXY"
+        app:fabSize="normal"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:elevation="8dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/relLayout"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/relLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/myPacks"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                tools:ignore="RelativeOverlap"
+                android:background="@color/colorGray"
+                />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/myPacks"
+                android:orientation="vertical">
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/purchasedPacks"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                tools:ignore="RelativeOverlap"
+                android:background="@color/colorGray"/>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/purchasedPacks"
+                android:orientation="vertical">
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

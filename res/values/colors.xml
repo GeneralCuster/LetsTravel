@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#49e5a5</color>
+    <color name="colorPrimaryDark">#3ab784</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPlaces">#B257C1</color>
+    <color name="colorPlacesDark">#8f469b</color>
+    <color name="colorPlacesDarkest">#5f4464</color>
+    <color name="colorActivities">#FFDB64</color>
+    <color name="colorActivitiesDark">#ccaf50</color>
+    <color name="colorActivitiesDarkest">#423e31</color>
+    <color name="colorStadiums">#49E5A5</color>
+    <color name="colorStadiumsDark">#3ab784</color>
+    <color name="colorStadiumsDarkest">#536f63</color>
+    <color name="colorNParks">#4DCDDD</color>
+    <color name="colorNParksDark">#3da4b1</color>
+    <color name="colorNParksDarkest">#3c5458</color>
+    <color name="colorMisc">#E84F5D</color>
+    <color name="colorMiscDark">#ba3f4b</color>
+    <color name="colorMiscDarkest">#4e3a3c</color>
+    <color name="colorGray">#DCDCDC</color>
+</resources>

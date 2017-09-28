@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Let\'s Travel</string>
+    <string name="categories">Categories</string>
+    <string name="places">Places</string>
+    <string name="placesLayout">placesLayout</string>
+    <string name="activities">Activities</string>
+    <string name="activitiesLayout">activitiesLayout</string>
+    <string name="stadiums">Stadiums</string>
+    <string name="stadiumsLayout">stadiumsLayout</string>
+    <string name="nParks">National Parks</string>
+    <string name="nParksLayout">nParksLayout</string>
+    <string name="misc">Misc</string>
+    <string name="miscLayout">miscLayout</string>
+    <string name="packCat">Choose a Pack</string>
+    <string name="packCatDesc">The world is meant to be explored. Go make your mark on it. Record those marks here.</string>
+    <string name="myPacks">\t My Packs</string>
+    <string name="purchasedPacks">\t Purchased Packs</string>
+    <string name="myPlaces">\t My Places</string>
+    <string name="myActivities">\t My Activities</string>
+    <string name="myStadiums">\t My Stadiums</string>
+    <string name="mynParks">\t My National Parks</string>
+    <string name="myMisc">\t My Misc</string>
+
+
+</resources>
